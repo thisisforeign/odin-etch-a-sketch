@@ -9,22 +9,24 @@
     <script src="script.js" defer></script>
   </head>
   <body>
-    <div class="section">
-      <h1>Etch-a-sketch</h1>
-      <button>Black</button>
-      <button>Rainbow</button>
-      <button>Eraser</button>
-      <div class="slidecontainer">
-        <input
-          type="range"
-          min="1"
-          max="100"
-          value="8"
-          class="slider"
-          id="myRange"
-        />
+    <h1>Etch-a-sketch</h1>
+    <div id="mainContainer">
+      <div class="sideContainer">
+        <button id="black">Black</button>
+        <button id="rgb">Rainbow</button>
+        <button id="eraser">Eraser</button>
+        <div class="slidecontainer">
+          <input
+            type="range"
+            min="1"
+            max="100"
+            value="8"
+            class="slider"
+            id="myRange"
+          />
+        </div>
+        <div id="size"></div>
       </div>
-      <div id="size"></div>
       <div id="container"></div>
     </div>
   </body>
